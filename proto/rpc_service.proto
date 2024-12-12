@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "grpc";
+option java_outer_classname = "RpcServiceOuterClass";
+
+service RpcService {
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}

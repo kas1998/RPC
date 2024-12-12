@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC Interacción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            margin: 5px 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cliente RPC</h1>
+    <input type="text" id="nameInput" placeholder="Escribe tu nombre">
+    <button onclick="sendRequest()">Enviar</button>
+    <p id="response"></p>
+
+    <script>
+        function sendRequest() {
+            const name = document.getElementById("nameInput").value;
+            if (name) {
+                // Aquí se puede integrar con un cliente que consuma el servicio.
+                alert("El cliente RPC debe ejecutarse directamente desde la aplicación Java.");
+            } else {
+                alert("Por favor, escribe tu nombre.");
+            }
+        }
+    </script>
+</body>
+</html>
